@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.get("/send",async(req,res)=>{
+app.post("/send",async(req,res)=>{
 
     return res.json({
         success:true,
