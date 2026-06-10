@@ -1,17 +1,15 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+import path from 'path';
 
 const app = express();
 
 app.use(express.static("public"));
 
-app.post("/send",async(req,res)=>{
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../views'));
 
-    return res.json({
-        success:true,
-        message:"Request Succesfully sent to Backend! Response received from Backend!"
-    })
-})
+
 
 app.get("/",async (req,res)=>{
     res.render("home.ejs");
@@ -20,3 +18,6 @@ app.get("/",async (req,res)=>{
 app.listen(5000,async()=>{
     console.log("running on port 5000!");
 })
+
+
+module.exports = app;
