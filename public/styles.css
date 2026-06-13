@@ -10922,7 +10922,9 @@ p.lead {
   }
 }
 
-
+a{
+  text-decoration: none;
+}
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;
