@@ -9,7 +9,7 @@
         <!-- Font Awesome icons (free version)-->
          
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <link rel="shortcut icon" href="/Latest.jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="/Latest.png" type="image/x-icon">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <!-- <span class="d-block d-lg-none">Gurumauj Satsangi</span> -->
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/Latest.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/Latest.png" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -33,6 +33,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cocurricular">Co-Curricular</a></li>
              
                 </ul>
@@ -123,10 +125,11 @@
 
 
             <!-- Experience-->
-        <section class="resume-section" id="experience">
+     <section class="resume-section" id="experience">
     <div class="resume-section-content">
         <h2 class="mb-5">Experience</h2>
         
+        <!-- Experience 1: AlgoLeap -->
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1 d-flex align-items-start flex-column flex-sm-row">
                 <div class="flex-shrink-0 me-sm-4 mb-3 mb-sm-0">
@@ -138,9 +141,13 @@
                     <p>Integrated a unified GenAI API for text, image, audio, and video generation, eliminating the need for multiple separate API keys.</p>
                 </div>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary"><a href="#" data-bs-toggle="modal" data-bs-target="#AlgoLeapModal"><i class="fas fa-file"></i></a>&nbsp;|&nbsp;May 2025 - July 2025</span></div>
+            <!-- Added min-width here for left-alignment within the right column -->
+            <div class="flex-shrink-0 text-start" style="min-width: 280px;">
+                <span class="text-primary"><a href="#" data-bs-toggle="modal" data-bs-target="#AlgoLeapModal"><i class="fas fa-external-link-alt"></i></a>&nbsp;|&nbsp;May 2025 - July 2025</span>
+            </div>
         </div>
 
+        <!-- Experience 2: IACS -->
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1 d-flex align-items-start flex-column flex-sm-row">
                 <div class="flex-shrink-0 me-sm-4 mb-3 mb-sm-0">
@@ -153,9 +160,13 @@
                     <p>Built a Store Inventory & Job Card Portal to automate tracking and operations, boosting departmental efficiency by 40%.</p>
                 </div>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary"><a href="#" data-bs-toggle="modal" data-bs-target="#IACSModal"><i class="fas fa-file"></i></a>&nbsp;|&nbsp;December 2024 - January 2025</span></div>
+            <!-- Added min-width here for left-alignment within the right column -->
+            <div class="flex-shrink-0 text-start" style="min-width: 280px;">
+                <span class="text-primary"><a href="#" data-bs-toggle="modal" data-bs-target="#IACSModal"><i class="fas fa-external-link-alt"></i></a>&nbsp;|&nbsp;December 2024 - January 2025</span>
+            </div>
         </div>
 
+        <!-- Experience 3: DEI -->
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1 d-flex align-items-start flex-column flex-sm-row">
                 <div class="flex-shrink-0 me-sm-4 mb-3 mb-sm-0">
@@ -164,12 +175,14 @@
                 <div>
                     <h3 class="mb-0">Summer Intern</h3>
                     <div class="subheading mb-3">Dayalbagh Educational Institute, Agra</div>
-                                        <p class="small">(Deemed to be University under Section 3 of the UGC Act 1956)</p>
-
+                    <p class="small">(Deemed to be University under Section 3 of the UGC Act 1956)</p>
                     <p>Developed an interactive Moodle-based online learning platform for the ICT-Continuing Education Centre, supporting 100+ learners with structured digital course delivery.</p>
                 </div>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary"><a href="#" data-bs-toggle="modal" data-bs-target="#DEIModal"><i class="fas fa-file"></i></a>&nbsp;|&nbsp;June 2024 - July 2024</span></div>
+            <!-- Added min-width here for left-alignment within the right column -->
+            <div class="flex-shrink-0 text-start" style="min-width: 280px;">
+                <span class="text-primary"><a href="#" data-bs-toggle="modal" data-bs-target="#DEIModal"><i class="fas fa-external-link-alt"></i></a>&nbsp;|&nbsp;June 2024 - July 2024</span>
+            </div>
         </div>
 
     </div>
@@ -381,7 +394,10 @@
 
         </div> </div>
 </section>
-            <hr class="m-0" />
+          
+
+                        <hr class="m-0" />
+
            <!-- Awards-->
 <section class="resume-section" id="achievements">
     <div class="resume-section-content">
@@ -462,6 +478,121 @@
                     </div>
                 </div>
             </div>
+
+        </div>
+
+        <!-- <ul class="fa-ul mb-0 mt-5">
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#BangkokModal">Honourable Mention Award - Bangkok University x Berkley SkyDeck Fund Hackathon 2026</a> 
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#YantraModal">Best AI Model - Yantra Central Hackathon 2025</a> 
+            </li>
+            <li>
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#AquathonModal">Winner - VIT Aquathon 2024</a> 
+            </li>
+        </ul> -->
+        
+    </div>
+</section>
+
+
+  <hr class="m-0" />
+
+            <section class="resume-section" id="publications">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Publications</h2>
+
+        <!-- Responsive Bootstrap Grid -->
+        <div class="row g-4">
+            
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/acceptance_incect.png" class="card-img-top" alt="Bangkok University Hackathon">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">A System and Method for Voice-Driven Semantic Image Search Leveraging AWS and OpenAI</h5>
+                        <p align="justify" class="card-text flex-grow-1"><span style="color:green">Accepted for Presentation & Publication</span> in the proceedings of IEEE International Conference on Emerging in Computing Technologies (INCECT 2026) Organized by Jain College of Engineering, Belagavi</p>
+                        <div class="mt-auto">
+                           <table class="table">
+                            <tr>
+                                <th>
+                                    Co-Authors
+                                </th>
+                                <td>
+<a target="_blank" href="https://www.linkedin.com/in/vyomkhurana/">Vyom Khurana</a>, <a target="_blank" href="https://www.linkedin.com/in/abhinav-sharma-631344318/">Abhinav Sharma</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Guide</th>
+                                <td><a target="_blank" href="https://vitdirectory.vit.ac.in/page/faculty/19662">Dr. Umamaheswari M</a></td>
+                            </tr>
+                           </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <!-- <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/Yantra 2025.jpg" class="card-img-top" alt="Yantra Central Hackathon">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Best AI Model</h5>
+                        <p class="card-text flex-grow-1">Yantra Central Hackathon 2025, VIT Vellore</p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#YantraModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/posts/gurumauj-satsangi_backdate-post-february-2025-we-won-the-ugcPost-7347649246889746434-xDXN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADX8foYBsRe7LcpMfROZtGCwHqgPaVcerxA" class="btn btn-outline-primary" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Card 3 -->
+            <!-- <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/Aquathon Certificate.jpg" class="card-img-top" alt="Aquathon">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Winner</h5>
+                        <p class="card-text flex-grow-1">Aquathon 2024, VIT Vellore</p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#AquathonModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/posts/gurumauj-satsangi_i-participated-in-aquathon2024-a-24-hour-activity-7193157547816591360-zOGl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADX8foYBsRe7LcpMfROZtGCwHqgPaVcerxA" class="btn btn-outline-primary" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+               <!-- <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/school_community.png" class="card-img-top" alt="Bangkok University Hackathon">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Certificate of Excellence</h5>
+                        <p class="card-text flex-grow-1">For Commendable Contribution to School Community, Issued by Indus Valley World School, Kolkata</p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#schoolcommunityModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/designing.png" class="card-img-top" alt="Bangkok University Hackathon">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Certificate of Excellence</h5>
+                        <p class="card-text flex-grow-1">For Commendable Achievement in Designing, Issued by Indus Valley World School, Kolkata</p>
+                        <div class="mt-auto">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#designingModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
 
         </div>
 
