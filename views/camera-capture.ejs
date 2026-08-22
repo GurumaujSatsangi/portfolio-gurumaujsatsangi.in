@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Camera Capture</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ccc;
+  }
+
+  #video, #canvas, #photo {
+    width: 480px;
+    max-width: 90vw;
+    border-radius: 8px;
+    border: 2px solid #444;
+  }
+
+  #canvas, #photo {
+    display: none;
+  }
+
+  #hint {
+    color: #888;
+    font-size: 14px;
+  }
+
+  #retakeBtn {
+    display: none;
+    padding: 8px 16px;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  #retakeBtn:hover {
+    background: #555;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Press <strong>Enter</strong> to capture a photo</h1>
+
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas"></canvas>
+  <img id="photo" alt="Captured photo">
+
+  <p id="hint">Camera preview loading...</p>
+  <button id="retakeBtn">Retake</button>
+
+  <script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const photo = document.getElementById('photo');
+    const hint = document.getElementById('hint');
+    const retakeBtn = document.getElementById('retakeBtn');
+
+    // Start camera
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        video.srcObject = stream;
+        hint.textContent = 'Press Enter to capture a photo';
+      })
+      .catch(err => {
+        hint.textContent = 'Camera access denied or unavailable: ' + err.message;
+      });
+
+    // Capture photo on Enter key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && video.style.display !== 'none') {
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        photo.src = canvas.toDataURL('image/png');
+        photo.style.display = 'block';
+        video.style.display = 'none';
+        retakeBtn.style.display = 'inline-block';
+        hint.textContent = 'Photo captured!';
+      }
+    });
+
+    // Retake photo
+    retakeBtn.addEventListener('click', () => {
+      photo.style.display = 'none';
+      video.style.display = 'block';
+      retakeBtn.style.display = 'none';
+      hint.textContent = 'Press Enter to capture a photo';
+    });
+  </script>
+
+</body>
+</html>

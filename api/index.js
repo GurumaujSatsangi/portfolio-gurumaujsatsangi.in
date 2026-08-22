@@ -16,6 +16,11 @@ app.set('views', path.join(__dirname, '../views'));
 
 
 
+app.get("/camera",async(req,res)=>{
+    return res.render("camera-capture.ejs");
+})
+
+
 app.get("/",async (req,res)=>{
     res.render("home.ejs");
 })
