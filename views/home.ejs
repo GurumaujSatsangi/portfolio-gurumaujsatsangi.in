@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Gurumauj Satsangi</title>
         <!-- Font Awesome icons (free version)-->
-         
+         <script type="module" src="https://cdn.jsdelivr.net/npm/@videojs/cdn@10.2.0/video.js"></script>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="shortcut icon" href="/Latest_1.jpg" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous" />
@@ -42,9 +42,19 @@
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
+           
             <!-- About-->
             <section class="resume-section" id="about">
+
+                
                 <div class="resume-section-content">
+
+                     <div class="alert alert-warning" role="alert">
+                        <marquee>
+Our paper got published in IEEE Xplore! You can read it <a href="https://ieeexplore.ieee.org/document/11742794">here</a> | One of my projects <b>Conference Management Toolkit</b> is being used for the Winter Session of The 9th International Conference on Dayalbagh (Art) Science (& Engineering) of (Evolutionary/Re-Evolutionary) Consciousness (DSC). Check it out <a href="https://cmt.dei.ac.in">here</a>.
+
+                        </marquee>
+</div>
                     <h1 class="mb-0">
                         Gurumauj 
                         <span class="text-primary">Satsangi</span>
@@ -81,8 +91,58 @@
                     <h3 class="mb-0">Vellore Institute of Technology, Vellore</h3>
                     <div class="subheading mb-3">Bachelor of Technology</div>
                     <div>Computer Science and Engineering</div>
-                    <p>CGPA: 8.43 / 10</p>
+                    <p>CGPA: 8.43 / 10</p><p class="small"><a href="" data-bs-toggle="modal" data-bs-target="#semester">(See Semester-wise GPA)</a></p>
                 </div>
+
+                <div class="modal fade" id="semester" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Semester-wise GPA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+            <tr>
+                <td>Fall Semester 2023-24</td>
+                <td>7.82</td>
+            </tr>
+              <tr>
+                <td>Winter Semester 2023-24</td>
+                <td>8.33</td>
+            </tr>
+              <tr>
+                <td>Fall Semester 2024-25</td>
+                <td>7.77</td>
+            </tr>
+              <tr>
+                <td>Winter Semester 2024-25</td>
+                <td>8.92</td>
+            </tr>
+              <tr>
+                <td>Fall Semester 2025-26</td>
+                <td>8.63</td>
+            </tr>
+              <tr>
+                <td>Winter Semester 2025-26</td>
+                <td>8.79</td>
+            </tr>
+            <tr>
+                <td>Fall Semester 2026-27</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td>Winter Semester 2026-27</td>
+                <td>Upcoming</td>
+            </tr>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
             <div class="flex-shrink-0"><span class="text-primary">August 2023 - Present</span></div>
         </div>
@@ -314,13 +374,89 @@
 
         <div class="row g-4">
 
+          <div class="col-md-6 col-lg-4">
+
+    <div class="card h-100 border rounded-3 shadow-sm position-relative">
+
+        <!-- Ongoing Project Badge -->
+    <span class="badge bg-primary position-absolute top-0 start-0 m-3" style="z-index: 2;">
+    Ongoing Project
+</span>
+
+        <div class="card-body d-flex flex-column p-4">
+
+            <video-player>
+                <video-skin style="display: block; width: 100%; aspect-ratio: 16 / 9;">
+                    <video src="/19662UG04.mp4" playsinline>
+                        <a href="https://videojs.org/help">Video player not working?</a>
+                    </video>
+                </video-skin>
+            </video-player>
+
+            <br>
+
+            <h4 class="card-title fw-bold mb-1">
+                RASHMI
+            </h4>
+
+            <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">
+                IoT-enabled optical x-ray digitizer with cloud-based semantic retrieval for diagnostic support
+            </div>
+
+            <p class="card-text small fw-semibold text-secondary mb-4">
+                Node.js, Express.js, OpenCV, GPT 4-o, DenseNet-121, Rad-Dino, Qdrant, Twilio
+            </p>
+
+            <div class="alert alert-warning" role="alert">
+                <ul class="mb-0">
+                    <li>
+                        <p class="card-text small mb-1">
+                            Nominated for Best Project Award from School of Computer Science &amp; Engineering at VIT, Vellore during Fall Semester 2026-27
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Optional GitHub button -->
+            <!--
+            <div class="mt-auto d-flex gap-2">
+                <a target="_blank"
+                   href="https://github.com/GurumaujSatsangi/LiveLingo"
+                   class="btn btn-outline-primary px-3 py-1">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            -->
+
+        </div>
+    </div>
+</div>
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-3 shadow-sm">
                     <div class="card-body d-flex flex-column p-4">
+                        <video-player>
+  <!--
+    Skins contain the entire player UI and are easily swappable.
+    Add the skin source to your project for full control over its
+    UI components.
+   -->
+  <video-skin style="display: block; width: 100%; aspect-ratio: 16 / 9;">
+    <!--
+        Media are players without UIs, handling networking
+        and display of the media. They are easily swappable
+        to handle different sources.
+      -->
+    <video src="/livelingo_demo.mp4" playsinline><a href="https://videojs.org/help">Video player not working?</a></video>
+  </video-skin>
+</video-player><br>
                         <h4 class="card-title fw-bold mb-1">LiveLingo</h4>
                         <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">System for realtime translation of livestreams into indic languages</div>
                         <p class="card-text small fw-semibold text-secondary mb-4">Node.js, Express.js, AWS IVS, S3, Gemini 3.1 Flash Live</p>
-                        
+                        <!--
+  The player element owns and shares state between the UI
+  components and Media. Put layout on the skin or container.
+ -->
+
                         <div class="mt-auto d-flex gap-2">
                             <a target="_blank" href="https://github.com/GurumaujSatsangi/LiveLingo" class="btn btn-outline-primary px-3 py-1"><i class="fab fa-github"></i></a>
                         </div>
@@ -331,18 +467,38 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-3 shadow-sm">
                     <div class="card-body d-flex flex-column p-4">
+                         <video-player>
+  <!--
+    Skins contain the entire player UI and are easily swappable.
+    Add the skin source to your project for full control over its
+    UI components.
+   -->
+  <video-skin style="display: block; width: 100%; aspect-ratio: 16 / 9;">
+    <!--
+        Media are players without UIs, handling networking
+        and display of the media. They are easily swappable
+        to handle different sources.
+      -->
+    <video src="/Validex_EY.mp4" playsinline><a href="https://videojs.org/help">Video player not working?</a></video>
+  </video-skin>
+</video-player><br>
                         <h4 class="card-title fw-bold mb-1">Validex</h4>
                         <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">Agentic AI Healthcare Provider Data Validation Platform</div>
                         <p class="card-text small fw-semibold text-secondary mb-2">Node.js, Express.js, Azure Maps, Azure OCR, Langgraph, Twilio, Supabase</p>
                         
-                        <p class="card-text small mb-4">
-                            <a target="_blank" href="/EY_Techathon.pdf" class="text-decoration-none text-primary fw-bold">Selected for the EY Techathon 6.0 National Semi Finale</a>
-                        </p>
+                        <div class="alert alert-warning" role="alert">
+                                                    <p class="card-text small mb-1">
+                                                        <ul>
+
+                                                            <li><p class="card-text small mb-1"><a target="_blank" href="/EY_Techathon.pdf" class="text-decoration-none text-primary">Selected for the EY Techathon 6.0 National Semi Finale</a></p>
+</li><li><p class="card-text small mb-1"><a href="https://www.ey.com/en_in/techathon-6/problem-statement-6-it-bpm">Problem Statement</a></p></li>
+                                                        </ul>
+                    </p>    </div>
+                        
                         
                         <div class="mt-auto d-flex gap-2">
                             <a target="_blank" href="https://validex.gurumaujsatsangi.in" class="btn btn-outline-primary px-3 py-1"><i class="fas fa-external-link-alt"></i></a>
                             <a target="_blank" href="https://github.com/GurumaujSatsangi/Validex" class="btn btn-outline-primary px-3 py-1"><i class="fab fa-github"></i></a>
-                            <a target="_blank" href="https://drive.google.com/file/d/18lRNsFnaBoTRM-QYRtBn5Q7MqGuHTNa2/view?usp=sharing" class="btn btn-outline-primary px-3 py-1"><i class="fa fa-video"></i></a>
                         </div>
                     </div>
                 </div>
@@ -351,18 +507,40 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-3 shadow-sm">
                     <div class="card-body d-flex flex-column p-4">
+                            <video-player>
+  <!--
+    Skins contain the entire player UI and are easily swappable.
+    Add the skin source to your project for full control over its
+    UI components.
+   -->
+  <video-skin style="display: block; width: 100%; aspect-ratio: 16 / 9;">
+    <!--
+        Media are players without UIs, handling networking
+        and display of the media. They are easily swappable
+        to handle different sources.
+      -->
+    <video src="/Memory Lens.mp4" playsinline><a href="https://videojs.org/help">Video player not working?</a></video>
+  </video-skin>
+</video-player><br>
                         <h4 class="card-title fw-bold mb-1">Memory Lens</h4>
-                        <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">System for voice driven semantic image search</div>
+                        <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">System for voice driven semantic image search leveraging AWS & OpenAI</div>
                         <p class="card-text small fw-semibold text-secondary mb-2">Node.js, Express.js, Flutter, AWS Rekognition, OpenAI Embeddings, QdrantDB</p>
                         
-                        <p class="card-text small mb-4">
-                            <a href="/Samsung PRISM.pdf" target="_blank" class="text-decoration-none text-primary fw-bold">Selected for Samsung PRISM GenAI Hackathon Semi Finale</a>
-                        </p>
+                        <div class="alert alert-warning" role="alert">
+
+                          <ul>
+                                <li>
+<p class="card-text small mb-1">   
+                            <a href="/Samsung PRISM.pdf" target="_blank" class="text-decoration-none text-primary">Selected for Samsung PRISM GenAI Hackathon Semi Finale</a>
+                       </p> 
+                                </li>
+                            </ul>
+
+                       </div>
                         
                         <div class="mt-auto d-flex gap-2">
                             <a target="_blank" href="/Memory Lens.apk" class="btn btn-outline-primary px-3 py-1"><i class="fa fa-download" aria-hidden="true"></i></a>
                             <a target="_blank" href="https://github.com/Vyomkhurana/Memory-Lens" class="btn btn-outline-primary px-3 py-1"><i class="fab fa-github"></i></a>
-                            <a target="_blank" href="https://youtu.be/qyNPU4weXrQ" class="btn btn-outline-primary px-3 py-1"><i class="fa fa-video"></i></a>
                         </div>
                     </div>
                 </div>
@@ -372,6 +550,10 @@
                 <div class="card h-100 border rounded-3 shadow-sm">
                     <div class="card-body d-flex flex-column p-4">
                         <h4 class="card-title fw-bold mb-3">HostelDekho</h4>
+                                                <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">                        Built to help VITians make informed room selections during hostel allocation. The platform allows students to explore floor plans, understand WiFi conditions, and gain real insights before choosing their rooms - factors that often make a huge difference but are rarely available in one place.
+</div>
+
+
                         <p class="card-text small fw-semibold text-secondary mb-4">Node.js, Express.js, AWS EC2, ElastiCache, Supabase</p>
                         
                         <div class="mt-auto d-flex gap-2">
@@ -386,8 +568,19 @@
                 <div class="card h-100 border rounded-3 shadow-sm">
                     <div class="card-body d-flex flex-column p-4">
                         <h4 class="card-title fw-bold mb-3">Conference Management Toolkit</h4>
+                        <div class="card-subtitle text-muted mb-3" style="font-size: 0.9rem;">Built to simplify academic conference management with a centralized platform for paper submissions, peer reviews, and acceptance decisions. The toolkit streamlines the conference workflow, helping organizers, reviewers, and participants manage submissions efficiently.</div>
                         <p class="card-text small fw-semibold text-secondary mb-4">Node.js, Express.js, Bootstrap, AWS RDS, EC2, Redis</p>
-                        
+                         <div class="alert alert-warning" role="alert">
+
+                          <ul>
+                                <li>
+<p class="card-text small mb-1">   
+                            <a href="https://cmt3.research.microsoft.com/About" target="_blank" class="text-decoration-none text-primary">Inspired from Microsoft Conference Management Toolkit</a>
+                       </p> 
+                                </li>
+                            </ul>
+
+                       </div>
                         <div class="mt-auto d-flex gap-2">
                             <a target="_blank" href="https://cmt.gurumaujsatsangi.in" class="btn btn-outline-primary px-3 py-1"><i class="fas fa-external-link-alt"></i></a>
                             <a target="_blank" href="https://github.com/GurumaujSatsangi/ConfEase" class="btn btn-outline-primary px-3 py-1"><i class="fab fa-github"></i></a>
@@ -516,10 +709,31 @@
             <!-- Card 1 -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="/acceptance_incect.png" class="card-img-top" alt="Bangkok University Hackathon">
+                     <span class="badge bg-primary position-absolute top-0 start-0 m-3" style="z-index: 2;">
+    Published in IEEE Xplore
+</span>
+                    <img src="/4425_Gurumauj Satsangi.jpg" class="card-img-top" alt="Bangkok University Hackathon">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">A System and Method for Voice-Driven Semantic Image Search Leveraging AWS and OpenAI</h5>
-                        <p align="justify" class="card-text flex-grow-1"><span style="color:green">Accepted for Presentation & Publication</span> in the proceedings of IEEE International Conference on Emerging in Computing Technologies (INCECT 2026) Organized by Jain College of Engineering, Belagavi</p>
+                        
+                        <div class="accordion mt-auto" id="accordionIncect">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIncect" aria-expanded="false" aria-controls="collapseOne">
+                                        View Details
+                                    </button>
+                                </h2>
+                                <div id="collapseIncect" class="accordion-collapse collapse" data-bs-parent="#accordionIncect">
+                                    <div class="accordion-body">
+                                        <!-- Removed wrapping <p> tag as lists shouldn't be inside paragraphs -->
+                                                               <p align="justify" class="card-text flex-grow-1"><span style="color:green">Accepted for Presentation & Publication</span> in the proceedings of IEEE International Conference on Emerging in Computing Technologies (INCECT 2026) Organized by Jain College of Engineering, Belagavi</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                         <div class="mt-auto">
                            <table class="table">
                             <tr>
@@ -536,8 +750,27 @@
                             </tr>
                             <tr>
                                 <th>Certificate</th>
-                                <td colspan="2"><a href="/4425_Gurumauj Satsangi.pdf" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
-                                
+                                <td colspan="2">
+                                    <a href="/4425_Gurumauj Satsangi.pdf" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                </td>
+                                <tr>
+                                    <th>
+                                        Paper
+                                    </th>
+                                    <td>
+                                    <a href="                                    https://ieeexplore.ieee.org/document/11742794
+" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+                                    </td></tr><tr>
+
+                                    
+                                    <th>
+                                        Presentation
+                                    </th>
+                                    <td>
+                                        <a href="/INCECT_4425_PRESENTATION.pdf" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    </td>
+                                </tr>
 
                            </table>
                         </div>
@@ -545,19 +778,66 @@
                 </div>
             </div>
 
+            
+
              <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="/acceptance_incode.png" class="card-img-top" alt="Bangkok University Hackathon">
+                    <img src="/1451_Gurumauj Satsangi.jpg" class="card-img-top" alt="Bangkok University Hackathon">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">LiveLingo: An End-to-End Streaming Middleware for Real-Time Translation of Livestreams into Indic Languages</h5>
+                         <div class="accordion mt-auto" id="accordionIncode">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIncode" aria-expanded="false" aria-controls="collapseIncode">
+                                        View Details
+                                    </button>
+                                </h2>
+                                <div id="collapseIncode" class="accordion-collapse collapse" data-bs-parent="#accordionIncode">
+                                    <div class="accordion-body">
+                                        <!-- Removed wrapping <p> tag as lists shouldn't be inside paragraphs -->
                         <p align="justify" class="card-text flex-grow-1"><span style="color:green">Accepted for Presentation & Publication</span> in the proceedings of IEEE International Conference on Innovation in Computing Data And Electronics (InCODE) Organized by Oriental Institute of Science & Technology, Bhopal</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="mt-auto">
                            <table class="table">
+                             <tr>
+                                <th>Co-Authors</th>
+                                <td><a target="_blank" href="https://www.linkedin.com/in/kriti-maheshwari11/">Kriti Maheshwari</a></td>
+                            </tr>
                            
                             <tr>
                                 <th>Guide</th>
                                 <td><a target="_blank" href="https://vitdirectory.vit.ac.in/page/faculty/15785">Dr. Narayanan Prasanth N</a></td>
                             </tr>
+
+                               <tr>
+    <th>Certificate</th>
+
+    <td>    <a href="1451_Gurumauj Satsangi.jpg" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+
+    <!-- <td colspan="2"><a href="/1451_Track 1.pdf" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td> -->
+
+</tr>
+<!-- 
+      <tr>
+    <th>Paper</th>
+
+    <td>    <p class="small">Coming Soon!</p></td>
+
+
+</tr> -->
+
+                            <tr>
+    <th>Presentation</th>
+
+    <td colspan="2"><a href="/1451_Track 1.pdf" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
+</tr>
                            </table>
                         </div>
                     </div>
@@ -567,10 +847,30 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="/acceptance_nsc.png" class="card-img-top" alt="Bangkok University Hackathon">
+                    <img src="/81_Gurumauj Satsangi.png" class="card-img-top" alt="Bangkok University Hackathon">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Agentic Multi-Source Validation of Healthcare Provider Directories Using Workflow Orchestration and Confidence-Based Decision Routing</h5>
-                        <p align="justify" class="card-text flex-grow-1"><span style="color:green">Accepted for Poster Presentation</span> at the 49th (Inter) National Systems Conference (NSC 2026) Organized by Dayalbagh Educational Institute, Agra & Systems Society of India</p>
+                        
+                              <div class="accordion mt-auto" id="accordionNSC">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNSC" aria-expanded="false" aria-controls="collapseOne">
+                                        View Details
+                                    </button>
+                                </h2>
+                                <div id="collapseNSC" class="accordion-collapse collapse" data-bs-parent="#accordionNSC">
+                                    <div class="accordion-body">
+                                        <!-- Removed wrapping <p> tag as lists shouldn't be inside paragraphs -->
+ <p align="justify" class="card-text flex-grow-1"><span style="color:green">Accepted for Poster Presentation</span> at the 49th (Inter) National Systems Conference (NSC 2026) organized jointly with The	 8th International	 Dayalbagh	 (Art)	 Science	 (&	 Engineering)	 of	 (Evolutionary/Re-Evolutionary)	
+Consciousness (DSC) by	 a	 consortium of	 seven	 universities, namely the	 Dayalbagh	 Educational	
+Institute,	Deemed	to	be	University	(DEI)	in	India,	Kiel	University	(CAU)	in Germany,	the	University	of	
+Birmingham,	 UK, the	University	 of	 Waterloo in Canada,	Western	 University	 in	Ontario,	 Canada,	the	
+University	of	British	Columbia in	Vancouver,	Canada, Arizona	State	University,	USA & the Systems Society of India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
                         <div class="mt-auto">
                               <table class="table">
                             <tr>
@@ -587,8 +887,14 @@
                             </tr>
                             <tr>
                                 <th>Certificate</th>
-                                <td colspan="2"><a href="/81_Gurumauj Satsangi.pdf" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
-                                
+                                <td colspan="2"><a href="/81_Gurumauj Satsangi.png" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+                            
+</tr>
+<tr>
+    <th>Presentation</th>
+
+    <td colspan="2"><a href="/NSC2026/Paper ID 81_NSC 2026_Poster Presentation.mp4" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+
 </tr>
                            </table>
                         </div>
@@ -900,6 +1206,8 @@
       </div>
       <div class="modal-body">
         <img width="100%" height="100%" src="/bangkok_2026.jpg"></img>
+                <img width="100%" height="90%" src="/bangkok_award_ceremony.jpg"></img>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
