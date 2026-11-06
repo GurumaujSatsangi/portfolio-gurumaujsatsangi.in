@@ -9,7 +9,8 @@
         <!-- Font Awesome icons (free version)-->
          <script type="module" src="https://cdn.jsdelivr.net/npm/@videojs/cdn@10.2.0/video.js"></script>
         <script type="module" src="https://cdn.jsdelivr.net/npm/@videojs/cdn@10.2.0/media/youtube-video.js"></script>
-
+<script type="module" src="https://cdn.jsdelivr.net/npm/@videojs/cdn@10.3.0/media/mux-video.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@videojs/cdn@10.3.0/extensions/mux-data.js"></script>
          <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="shortcut icon" href="/Latest_1.jpg" type="image/x-icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous" />
@@ -472,7 +473,11 @@ Our paper got published in IEEE Xplore! You can read it <a href="https://ieeexpl
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 border rounded-3 shadow-sm">
                     <div class="card-body d-flex flex-column p-4">
-                         <video-player>
+                         <!--
+  The player element owns and shares state between the UI
+  components and Media. Put layout on the skin or container.
+ -->
+<video-player>
   <!--
     Skins contain the entire player UI and are easily swappable.
     Add the skin source to your project for full control over its
@@ -484,10 +489,12 @@ Our paper got published in IEEE Xplore! You can read it <a href="https://ieeexpl
         and display of the media. They are easily swappable
         to handle different sources.
       -->
-    <video controls preload="metadata" playsinline>
-      <source src="/Validex_EY.mp4" type="video/mp4">
-      <a href="https://videojs.org/help">Video player not working?</a>
-    </video>
+    <mux-video src="https://stream.mux.com/atEMB8yFu01JHV01OAiPlmaYiWbHfWxqwrMHlOwJFNfSg.m3u8" playsinline></mux-video>
+    <!--
+        Mux Data monitors playback quality and is selected by default
+        for Mux video and audio sources.
+      -->
+    <mux-data></mux-data>
   </video-skin>
 </video-player><br>
                         <h4 class="card-title fw-bold mb-1">Validex</h4>
